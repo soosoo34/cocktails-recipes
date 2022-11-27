@@ -1,0 +1,18 @@
+nav {
+  background: var(--primary-color);
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+ul {
+  li {
+    display: inline-block;
+
+    &:hover {
+      background: var(--secondary-color);
+    }
+  }
+}
+
