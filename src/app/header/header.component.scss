@@ -8,11 +8,13 @@ nav {
 
 ul {
   li {
+    padding: 10px 20px;
     display: inline-block;
-
+    border-radius: 3px;
     &:hover {
-      background: var(--secondary-color);
+      background-color: var(--secondary-color);
     }
+    transition: background-color 0.4s;
   }
 }
 
