@@ -5,46 +5,52 @@
   margin: 0;
 }
 
-ul , li , ol {
+ul, li, ol {
   list-style: none;
 }
 
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 :root {
   --primary-color: #546de5;
   --secondary-color: #778beb;
   --accent: #e5546d;
   --lightgray: #ddd;
-  --text-regular:#444;
+  --text-regular: #444;
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Roboto', sans-serif;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-regular);
 }
 
 
-
 // classes utilities
 .d-flex {
   display: flex;
 }
+
 .flex-row {
   flex-direction: row;
 }
+
 .flex-column {
   flex-direction: column;
 }
+
 .flex-justify-content-center {
   justify-content: center;
 }
+
 .flex-justify-content-between {
   justify-content: space-between;
 }
@@ -52,9 +58,11 @@ body {
 .flex-justify-content-between {
   justify-content: space-between;
 }
+
 .flex-align-items-center {
   align-items: center;
 }
+
 .flex-align-items-between {
   align-items: space-between;
 }
@@ -62,17 +70,32 @@ body {
 .flex-fill {
   flex: 1 1 auto;
 }
+
+.flex-50 {
+  flex: 1 1 50%;
+}
+
 .p-10 {
   padding: 10px;
 }
+
 .p-20 {
   padding: 20px;
 }
+
 .m-10 {
   margin: 10px;
 }
+
 .m-20 {
   margin: 20px;
+}
+
+.mh-400 {
+  max-height: 400px;
+}
+.mw-400 {
+  max-width: 400px;
 }
 
 
@@ -80,6 +103,65 @@ body {
 .d1 {
   border: 1px solid red;
 }
+
 .d2 {
   border: 1px solid green;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+// theme
+.list-primary {
+  li {
+    padding: 10px 15px;
+    border: 1px solid var(--lightgray);
+    transition: all 0.6s;
+    border-top: 0;
+    &:hover {
+      font-weight: 500;
+      cursor: pointer;
+      color: white;
+      background-color: var(--primary-color);
+    }
+  }
+  li:first-child {
+    border-top: 1px solid var(--lightgray);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  li:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+.btn {
+  padding: 10px 15px;
+  background-color: white;
+  border: 0;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  &-primary {
+    background-color: var(--primary-color);
+    color: white;
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+    transition: background-color 0.6s;
+  }
 }
